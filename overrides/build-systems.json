@@ -5286,6 +5286,9 @@
   "django-braces": [
     "setuptools"
   ],
+  "django-browser-reload": [
+    "setuptools"
+  ],
   "django-cache-memoize": [
     "setuptools"
   ],
@@ -5471,6 +5474,9 @@
   "django-libsass": [
     "setuptools"
   ],
+  "django-lifecycle": [
+    "setuptools"
+  ],
   "django-logentry-admin": [
     "setuptools"
   ],
@@ -5616,6 +5622,9 @@
   "django-scopes": [
     "setuptools"
   ],
+  "django-sendgrid-v5": [
+    "setuptools"
+  ],
   "django-ses": [
     "setuptools"
   ],
@@ -5666,9 +5675,15 @@
   "django-tastypie": [
     "setuptools"
   ],
+  "django-template-partials": [
+    "flit-core"
+  ],
   "django-timezone-field": [
     "poetry-core",
     "setuptools"
+  ],
+  "django-tree-queries": [
+    "hatchling"
   ],
   "django-treebeard": [
     "setuptools"
@@ -7591,6 +7606,8 @@
     "setuptools"
   ],
   "fsspec": [
+    "hatch-vcs",
+    "hatchling",
     "setuptools"
   ],
   "fsspec-xrootd": [
@@ -11024,6 +11041,9 @@
   "litellm": [
     "poetry-core"
   ],
+  "litestar": [
+    "hatchling"
+  ],
   "littleutils": [
     "setuptools"
   ],
@@ -14007,6 +14027,9 @@
   "nmapthon2": [
     "setuptools"
   ],
+  "nmcli": [
+    "setuptools"
+  ],
   "nocasedict": [
     "setuptools"
   ],
@@ -14272,6 +14295,9 @@
     "setuptools"
   ],
   "objgraph": [
+    "setuptools"
+  ],
+  "objprint": [
     "setuptools"
   ],
   "objsize": [
@@ -15914,7 +15940,14 @@
     "setuptools"
   ],
   "polyfactory": [
-    "poetry-core"
+    {
+      "buildSystem": "poetry-core",
+      "until": "2.10.0"
+    },
+    {
+      "buildSystem": "hatchling",
+      "from": "2.10.0"
+    }
   ],
   "polyline": [
     "setuptools"
@@ -17118,6 +17151,11 @@
   ],
   "pydyf": [
     "flit-core",
+    "setuptools"
+  ],
+  "pye3d": [
+    "cmake",
+    "cython",
     "setuptools"
   ],
   "pyeapi": [
@@ -20083,6 +20121,9 @@
   "python3-application": [
     "setuptools"
   ],
+  "python3-discogs-client": [
+    "setuptools"
+  ],
   "python3-eventlib": [
     "setuptools"
   ],
@@ -21686,6 +21727,9 @@
     "hatchling",
     "setuptools",
     "setuptools-scm"
+  ],
+  "scienceplots": [
+    "setuptools"
   ],
   "scikit-bio": [
     "cython",
@@ -25738,7 +25782,14 @@
     "setuptools"
   ],
   "types-awscrt": [
-    "poetry-core"
+    {
+      "buildSystem": "poetry-core",
+      "until": "0.21.4"
+    },
+    {
+      "buildSystem": "setuptools",
+      "from": "0.21.4"
+    }
   ],
   "types-backports": [
     "setuptools"
@@ -25877,7 +25928,14 @@
     "setuptools"
   ],
   "types-s3transfer": [
-    "poetry-core"
+    {
+      "buildSystem": "poetry-core",
+      "until": "0.10.2"
+    },
+    {
+      "buildSystem": "setuptools",
+      "from": "0.10.2"
+    }
   ],
   "types-setuptools": [
     "setuptools"
@@ -26241,6 +26299,10 @@
     {
       "buildSystem": "hatchling",
       "from": "2.0.2"
+    },
+    {
+      "buildSystem": "hatch-vcs",
+      "from": "2.2.3"
     }
   ],
   "urlman": [
@@ -26295,6 +26357,12 @@
     "setuptools"
   ],
   "uuid": [
+    "setuptools"
+  ],
+  "uuid6": [
+    "setuptools"
+  ],
+  "uuid7": [
     "setuptools"
   ],
   "uvcclient": [
@@ -26488,6 +26556,9 @@
     "setuptools"
   ],
   "vivisect": [
+    "setuptools"
+  ],
+  "viztracer": [
     "setuptools"
   ],
   "vmprof": [
