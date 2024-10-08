@@ -165,7 +165,6 @@ in
   git-subdirectory-hook = callTest ./git-subdirectory-hook { };
   pandas = callTest ./pandas { };
   python-magic = callTest ./python-magic { };
-  cmdstanpy = callTest ./cmdstanpy { };
   avro-python3 = callTest ./avro-python3 { };
   mpi4py-test = callTest ./mpi4py-test { };
   ckzg = callTest ./ckzg { };
@@ -174,6 +173,7 @@ in
   soundfile-wheel = callTest ./soundfile-wheel { };
   soundfile = callTest ./soundfile { };
   pyogrio = callTest ./pyogrio { };
+  dask-dataframe = callTest ./dask-dataframe { };
 } // lib.optionalAttrs (!stdenv.isDarwin) {
   # Editable tests fails on Darwin because of sandbox paths
   pep600 = callTest ./pep600 { };
@@ -226,9 +226,11 @@ in
   common-pkgs-2 = callTest ./common-pkgs-2 { };
   pytest-randomly = callTest ./pytest-randomly { };
   fetched-projectdir = callTest ./fetched-projectdir { };
+  cmdstanpy = callTest ./cmdstanpy { };
 } // lib.optionalAttrs (stdenv.isLinux && stdenv.isx86_64) {
   # x86_86-linux
   pendulum = callTest ./pendulum { };
+  pendulum-with-rust = callTest ./pendulum-with-rust { };
   tensorflow = callTest ./tensorflow { };
   # Test deadlocks on darwin and fails to start at all with aarch64-linux,
   # sandboxing issue?
